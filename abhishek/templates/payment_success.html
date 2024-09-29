@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Successful</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white p-8 rounded-lg shadow-lg max-w-md w-full">
+        <div class="text-center">
+            <div class="inline-flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mb-6">
+                <svg class="w-8 h-8 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+            </div>
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">Payment Successful!</h2>
+            <p class="text-gray-600 mb-8">Your transaction has been processed successfully. Thank you for your purchase!</p>
+            <div class="bg-gray-50 rounded-lg p-4 mb-8">
+                <p class="text-sm text-gray-600 mb-2">Transaction ID</p>
+                <p class="text-lg font-semibold text-gray-800">#TRX123456789</p>
+            </div>
+            <a href="{% url 'index' %}" class="inline-block bg-green-500 text-white font-semibold px-6 py-3 rounded-lg hover:bg-green-600 transition duration-300 ease-in-out">
+                Return to Dashboard
+            </a>
+        </div>
+    </div>
+</body>
+</html>
