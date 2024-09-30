@@ -392,9 +392,9 @@
                   'color': '#3399cc'
               },
               'handler': function (response){
-                  // Redirect to WhatsApp group link
-                  window.location.href = '/payment/success/';
-              },
+                    // Redirect to the payment success page with payment details
+                    window.location.href = `/payment/success/?payment_id={{razorpay_payment_id}}&order_id={{razorpay_order_id}}&signature={{razorpay_signature}}`;
+                },
               'modal': {
                   'ondismiss': function() {
                       // Redirect to home page on modal close
@@ -420,8 +420,8 @@
 
       var rzp1 = new Razorpay(options);
       document.getElementById("rzp-button1").onclick = function (e) {
-        rzp1.open();
         e.preventDefault();
+        rzp1.open();
       };
     </script>
 

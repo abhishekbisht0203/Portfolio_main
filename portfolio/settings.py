@@ -48,6 +48,8 @@ INSTALLED_APPS = [
 RAZORPAY_KEY_ID = 'rzp_test_qri6jwdHBjaIDE'
 RAZORPAY_KEY_SECRET = 'mVmuPQFdyy9OobDwNdHFLIT6'
 
+SECURE_CROSS_ORIGIN_OPENER_POLICY = "same-origin-allow-popups"
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
